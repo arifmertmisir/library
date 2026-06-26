@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <h2>Books in the Library:</h2>
+    <div class="book"></div>
+    <button class="button addBook-button">Add a New Book</button>
+    <dialog id="dialog">
+        <header>Add a Book</header>
+        <div class="inputWrapper">
+            <label for="titleField">Title of the book:</label>
+            <input id="titleField" name="titleField" type="text">
+            <label for="authorField">Author of the book:</label>
+            <input id="authorField" name="authorField" type="text">
+            <label for="pagesField">Number of pages:</label>
+            <input id="pagesField" name="pagesField" type="text">
+            <label for="isReadField">Have you read this book before(Yes/No):</label>
+            <input id="isReadField" name="isReadField" type="text">
+            <label for="yearField">Book's published year:</label>
+            <input id="yearField" name="yearField" type="text">
+            <div class="buttonWrapper">
+                <button class="button save-button" type="submit">Save</button>
+                <button class="button cancel-button" type="reset">Cancel</button>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="library.js"></script>
+</body>
+</html>
